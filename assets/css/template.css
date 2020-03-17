@@ -1,0 +1,421 @@
+h1,
+h2,
+h3,
+p,
+li,
+legend {
+    font-family: 'Roboto Condensed', sans-serif;
+    display: flex;
+    justify-content: center;
+    text-align: justify;
+    color: #ffffff;
+}
+
+h1 {
+    font-size: 70px;
+    text-shadow: 3px 1px #4F4F4F;
+}
+
+h2 {
+    font-size: 42px;
+    font-style: italic;
+    text-shadow: 2px 1px #4F4F4F;
+}
+
+h3 {
+    font-size: 24px;
+    text-shadow: 2px 1px #4F4F4F;
+}
+
+p {
+    font-size: 20px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #8A2BE2;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    border-bottom: 2px solid #ffffff;
+    color:  #ffffff;
+    text-align: center;
+}
+
+legend {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: #ffffff;
+    font-size: 16px;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+}
+
+link {
+    display: pointer;
+}
+
+#background {
+    background-image: url('../images/topo.jpeg');
+    background-size: cover;
+    background-position: top;
+}
+
+.container {
+    width: 900px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;    
+}
+
+.conteudo {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    flex: 1;
+}
+
+.foto_conteudo {
+    width: 400px;
+    height: auto;
+    border: 2px solid white;
+    border-radius: 10px;
+}
+
+.foto {
+    display: flex;
+    justify-content: center;
+    color: #ffffff;
+}
+
+.historia {
+    margin-top: 20px;
+}
+
+.discografia {
+    display: flex;
+    justify-content: center;
+    margin-top: 2%;
+    margin-bottom: 5%;
+    flex: 1;
+    flex-direction: row;
+    border: 1px solid #ffffff;
+    border-radius: 20px;
+}
+
+.experience {
+    width: 60%;
+    height: auto;
+    margin-right: 10%;
+}
+
+.bandofgypsys {
+    width: 40%;
+    height: auto;
+    margin-right: 10%;
+}
+
+footer {
+    margin-top: 10px;
+    height: auto;
+    text-align: center;
+    background-color: #ffffff;
+}
+
+footer p {
+    color: #8A2BE2;
+    text-align: center;
+    font-size: 16px;
+}
+
+footer a:hover {
+    color: blue;
+}
+
+
+/* Responsividade */
+@media (max-width:1024px) and (min-width:769px) {
+
+    .container {
+        width: auto;
+        padding: 5%;
+    }
+
+    .discografia {
+        width: auto;
+        padding-right: 10%;
+        padding-left: 3%;
+    }
+
+    .discografia li {
+        font-size: 20px;
+    }
+
+    footer {
+        height: auto;
+        text-align: center;
+    }
+}/*OK*/
+
+@media (max-width: 768px) and (min-width:600px) {
+
+    .container {
+        width: auto;
+        padding: 3%;
+        flex-direction: column;
+    }
+
+    footer {
+        height: auto;
+        text-align: center;
+        margin: 0;
+    }
+
+
+    #background h1 {
+        font-size: 50px;
+        text-align: center;
+    }
+
+    #background h2 {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .discografia {
+        padding-right: 7%;
+    }
+
+
+} /*OK*/
+
+
+@media (max-width:599px) and (min-width:425px) {
+
+    #background {
+        width: auto;
+        text-align: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #background h1 {
+        font-size: 36px;
+    }
+
+    #background h2 {
+        font-size: 25px;
+    }
+
+    .container {
+        width: auto;
+        padding: 2%;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .discografia {
+        flex-direction: column;
+        justify-content: center;
+        width: auto;
+        padding: 5%;
+    }
+
+    .bandofgypsys {
+        justify-content: center;
+        flex-direction: column;
+        width: auto;
+    }
+
+    .experience {
+        justify-content: center;
+        flex-direction: column;
+        width: auto;
+    }
+
+    footer {
+        height: auto;
+        width: auto;
+        text-align: center;
+    }
+
+    footer p {
+        font-size: 12px;
+    }
+} /*OK*/
+
+@media (max-width:424px) and (min-width:375px) {
+
+    #background {
+        width: auto;
+        height: auto;
+        text-align: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+
+    #background h1 {
+        font-size: 30px;
+    }
+
+    #background h2 {
+        font-size: 15px;
+    }
+
+    .container {
+        width: auto;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .conteudo {
+        justify-content: center;
+        width: 30%;
+        height: auto; 
+        margin: auto;
+        font-size: 10px;
+    }
+
+    .historia p {
+        font-size: 13px;
+    }
+
+
+    .foto {
+        width: auto;
+        height: auto;
+    }
+
+    .foto img {
+        width: 250px;
+        height: 400px;
+    }
+
+    .foto_conteudo {
+        width: auto;
+        height: auto;
+    }
+
+    .discografia {
+        flex-direction: column;
+        justify-content: center;
+        width: auto;
+        padding: 10%;
+    }
+
+    .discografia  {
+        font-size: 12px;
+        text-align: center;
+    }
+
+    .discografia h3 {
+        font-size: 15px;
+        text-align: center;
+    }
+
+
+    .bandofgypsys {
+        justify-content: center;
+        flex-direction: column;
+        width: auto;
+    }
+
+    .experience {
+        justify-content: center;
+        flex-direction: column;
+        width: auto;
+    }
+
+
+    section {
+        flex-direction: column;
+        justify-content: center;
+        padding: 5%;
+        width: auto;
+    }
+
+
+    footer p {
+        font-size: 12px;
+    }
+
+} /*OK*/
+
+@media (max-width:374px) and (min-width: 319px) {
+
+    #background {
+        width: auto;
+        height: auto;
+        text-align: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #background h1 {
+        font-size: 20px;
+    }
+
+    #background h2 {
+        font-size: 13px;
+    }
+
+    .container {
+        flex-direction: column;
+        justify-content: center;
+        width: auto;
+    }
+
+
+    .discografia {
+        flex-direction: column;
+        justify-content: center;
+        width: auto;
+    }
+
+    .bandofgypsys {
+        justify-content: center;
+        flex-direction: column;
+        width: auto;
+    }
+
+    .experience {
+        justify-content: center;
+        flex-direction: column;
+        width: auto;
+    }
+
+    .foto {
+        width: auto;
+        height: auto;
+    }
+
+    .foto_conteudo {
+        width: auto;
+        height: auto;
+    }
+
+    
+    .foto img {
+        width: 250px;
+        height: 400px;
+    }
+
+    .historia {
+        padding: 5%;
+    }
+    .historia p {
+        font-size: 12px;
+    }
+
+    footer p {
+        font-size: 10px;
+    }
+} /*OK*/
